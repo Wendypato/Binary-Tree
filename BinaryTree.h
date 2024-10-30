@@ -26,8 +26,13 @@ public:
 
     Node* insert(Node* node, int value);
     Node* search(Node* node, int value);
+    Node* remove(Node* node, int value);
+    void inOrderTraversal(Node* node);
+    void preOrderTraversal(Node* node);
+    void postOrderTraversal(Node* node);
 
-    //void preorde(Node* node);
+private:
+    Node* minValueNode(Node* node);
 
 
 };
